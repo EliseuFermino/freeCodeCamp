@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Formuário de Pesquisa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        
+        <div id="title-description">
+        <h1 id="title">Formuário de Pesquisa</h1>
+        <p id="descripption">O formuário abaixo tem o intuito de conhecer melhor um pouco da sua história musical. 
+            Por favor, seja o mais verdadeiro possivel!
+        </p>
+    </div>
+
+        <form id="survey-form"  >
+            <fieldset>
+                <label id="name-label" for="name"> Nome: <input id="name" type="text" required placeholder="Digite seu nome"> </label>
+                <label id="email-label" for="email"> E-mail: <input id="email" type="email" required  placeholder="Informe seu e-mail"> </label>
+                <label id="number-label" for="number"> Número: <input id="number" type="number" required min="1" max="1000"  placeholder="Informe um número até 1000"> </label>
+        </fieldset>
+
+        <fieldset id="field_dropdown">
+            <legend>Selecione uma opção abaixo:</legend>
+            <select name="select" id="dropdown">
+                <option value="">(Informe)</option>
+                <option value="1">Toco Piano</option>
+                <option value="2">Não toco piano</option>
+            </select>
+        </fieldset>
+
+
+        <fieldset  >
+            <legend>Qual o seu gênero: </legend> 
+            <label for="homem"><input id="homem" class="inline" type="radio" name="sexo" value="H" checked>Homem</label>
+            <label for="mulher"><input id="mulher" class="inline" type="radio" name="sexo" value="M"> Mulher </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Quais os estilos que você mais gosta: </legend>            
+                <input class="inline" type="checkbox" value="1">Jazz   
+                <input class="inline" type="checkbox" value="2">Blues   
+                <input class="inline" type="checkbox" value="3">Smooth-Jazz
+                <input class="inline" type="checkbox" value="4">Pop
+                <input class="inline" type="checkbox" value="5">R'n'B
+           
+        </fieldset>
+
+
+        <fieldset>
+            <label for="text-area-description"> informe uma bio:
+                <textarea name="textarea" id="text-area-description" cols="30" rows="3" placeholder="Diga mais sobre você!"></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit"  value="Submit">
+        </form>
+    </body>
+
+</html>
